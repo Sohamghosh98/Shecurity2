@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEcurity</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #b00000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+        }
+
+        .navbar .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .icons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .main {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .help-button {
+            background-color: #b00000;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        .help-button:active {
+            transform: scale(0.95);
+        }
+
+        .mic-button {
+            background-color: #b00000;
+            color: white;
+            font-size: 24px;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .mic-button:active {
+            transform: scale(0.95);
+        }
+
+        .mic-button i {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="title">SHEcurity</div>
+        <div class="icons">
+            <span>Wi-Fi <i style="color: green;">ON</i></span>
+            <span>GPS <i style="color: green;">ON</i></span>
+        </div>
+    </div>
+    <div class="main">
+        <button class="help-button">HELP</button>
+        <button class="mic-button">
+            <i class="fas fa-microphone"></i>
+        </button>
+    </div>
+
+    <!-- Add FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
